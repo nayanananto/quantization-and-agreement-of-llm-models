@@ -1,0 +1,49 @@
+{
+  "conditions": [
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "precision": "fp16",
+      "dataset": {"name": "truthful_qa_mc1", "limit": 300, "max_new_tokens": 8}
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "precision": "nf4",
+      "dataset": {"name": "truthful_qa_mc1", "limit": 300, "max_new_tokens": 8}
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "precision": "fp16",
+      "dataset": {"name": "gsm8k", "limit": 300, "max_new_tokens": 256}
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "precision": "nf4",
+      "dataset": {"name": "gsm8k", "limit": 300, "max_new_tokens": 256}
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "precision": "fp16",
+      "dataset": {"name": "truthful_qa_mc1", "limit": 300, "max_new_tokens": 8}
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "precision": "nf4",
+      "dataset": {"name": "truthful_qa_mc1", "limit": 300, "max_new_tokens": 8}
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "precision": "fp16",
+      "dataset": {"name": "gsm8k", "limit": 300, "max_new_tokens": 256}
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "precision": "nf4",
+      "dataset": {"name": "gsm8k", "limit": 300, "max_new_tokens": 256}
+    }
+  ],
+  "panel_size": 5,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "max_new_tokens": 256,
+  "base_seed": 20260809
+}
