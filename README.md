@@ -1,5 +1,15 @@
 # Quantization and Agreement in Homogeneous LLM Panels
 
+![Project overview: compare an original AI model with a smaller-memory copy, ask each the same question five times, and check whether agreeing answers are actually right. Five wrong answers can differ or repeat the same mistake.](docs/project-overview.svg)
+
+If an AI gives the same answer several times, it is tempting to trust it. This
+project asks whether that agreement stays useful after making the model use
+less memory. We compare the original and compressed versions, then check
+whether their answers are right and whether their mistakes agree. In this
+small study, reliability can drop without a consistent rise in agreement on
+one wrong answer. The arithmetic examples in the figure are illustrations,
+not experimental results.
+
 This branch is the minimal reproducibility artifact for the paired FP16--NF4
 study. It contains no manuscript files, generated paper figures, failed runs,
 notebook workers, or polling infrastructure.

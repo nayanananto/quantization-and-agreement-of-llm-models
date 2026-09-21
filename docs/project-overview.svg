@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title description">
+  <title id="title">Does a smaller AI still deserve our trust?</title>
+  <desc id="description">We compare an original AI language model with a copy that uses less memory. We ask each version the same question five times, then check correctness and agreement. An illustrative question, two plus two, shows that five wrong answers can either differ or all be the same. In this small study, reliability can drop without a consistent increase in agreement on one wrong answer.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef4f8"/>
+    </linearGradient>
+    <linearGradient id="takeaway" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#162b49"/>
+      <stop offset="1" stop-color="#244767"/>
+    </linearGradient>
+    <g id="reply" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 2h32a9 9 0 0 1 9 9v22a9 9 0 0 1-9 9H23L11 51v-9a9 9 0 0 1-9-9V11a9 9 0 0 1 9-9Z"/>
+      <circle cx="17" cy="23" r="2" fill="currentColor" stroke="none"/>
+      <circle cx="27" cy="23" r="2" fill="currentColor" stroke="none"/>
+      <circle cx="37" cy="23" r="2" fill="currentColor" stroke="none"/>
+    </g>
+    <g id="arrow" fill="none" stroke="#8ca0b6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0h30m-7-7 7 7-7 7"/>
+    </g>
+    <g id="memory" fill="currentColor">
+      <rect width="94" height="22" rx="6" opacity=".18"/>
+      <rect x="11" y="7" width="8" height="8" rx="2"/>
+      <rect x="25" y="7" width="8" height="8" rx="2"/>
+      <rect x="39" y="7" width="8" height="8" rx="2"/>
+      <rect x="66" y="9" width="16" height="4" rx="2"/>
+    </g>
+  </defs>
+
+  <rect width="1440" height="1080" rx="24" fill="url(#background)"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#182c45">
+    <rect x="56" y="45" width="6" height="23" rx="3" fill="#137c86"/>
+    <text x="75" y="64" font-size="20" font-weight="650" letter-spacing="2" fill="#426078">THE PROJECT, IN PLAIN LANGUAGE</text>
+    <text x="56" y="127" font-size="46" font-weight="700" letter-spacing="-1">Does a smaller AI still deserve our trust?</text>
+    <text x="56" y="169" font-size="25" fill="#506579">We test whether repeated answers stay reliable when a language model uses less memory.</text>
+
+    <!-- A three-step overview of the study, without experimental numbers. -->
+    <rect x="56" y="213" width="416" height="360" rx="22" fill="#ffffff" stroke="#dae4ec"/>
+    <rect x="512" y="213" width="416" height="360" rx="22" fill="#ffffff" stroke="#dae4ec"/>
+    <rect x="968" y="213" width="416" height="360" rx="22" fill="#ffffff" stroke="#dae4ec"/>
+    <use href="#arrow" x="477" y="393"/>
+    <use href="#arrow" x="933" y="393"/>
+
+    <circle cx="96" cy="254" r="19" fill="#eaf0fa"/>
+    <text x="96" y="262" text-anchor="middle" font-size="23" font-weight="700" fill="#3561a6">1</text>
+    <text x="128" y="263" font-size="27" font-weight="650">Make a smaller copy</text>
+    <rect x="91" y="299" width="346" height="189" rx="16" fill="#f7f9fc"/>
+    <g color="#426caf">
+      <use href="#memory" x="121" y="324"/>
+      <use href="#memory" x="121" y="353"/>
+      <use href="#memory" x="121" y="382"/>
+    </g>
+    <use href="#arrow" x="249" y="365"/>
+    <g color="#137c86">
+      <use href="#memory" x="313" y="353"/>
+    </g>
+    <text x="168" y="445" text-anchor="middle" font-size="23" font-weight="600" fill="#3561a6">Original</text>
+    <text x="360" y="445" text-anchor="middle" font-size="23" font-weight="600" fill="#137c86">Smaller copy</text>
+    <text x="264" y="524" text-anchor="middle" font-size="24">Same AI model,</text>
+    <text x="264" y="554" text-anchor="middle" font-size="24" fill="#506579">stored with less detail.</text>
+
+    <circle cx="552" cy="254" r="19" fill="#e7f4f3"/>
+    <text x="552" y="262" text-anchor="middle" font-size="23" font-weight="700" fill="#137c86">2</text>
+    <text x="584" y="263" font-size="27" font-weight="650">Ask each five times</text>
+    <text x="547" y="321" font-size="20" font-weight="600" fill="#3561a6">ORIGINAL</text>
+    <g color="#426caf">
+      <use href="#reply" x="547" y="337"/>
+      <use href="#reply" x="620" y="337"/>
+      <use href="#reply" x="693" y="337"/>
+      <use href="#reply" x="766" y="337"/>
+      <use href="#reply" x="839" y="337"/>
+    </g>
+    <text x="547" y="423" font-size="20" font-weight="600" fill="#137c86">SMALLER COPY</text>
+    <g color="#137c86">
+      <use href="#reply" x="547" y="439"/>
+      <use href="#reply" x="620" y="439"/>
+      <use href="#reply" x="693" y="439"/>
+      <use href="#reply" x="766" y="439"/>
+      <use href="#reply" x="839" y="439"/>
+    </g>
+    <text x="720" y="538" text-anchor="middle" font-size="24" fill="#506579">Same question. Fresh replies.</text>
+
+    <circle cx="1008" cy="254" r="19" fill="#edf0f6"/>
+    <text x="1008" y="262" text-anchor="middle" font-size="23" font-weight="700" fill="#526582">3</text>
+    <text x="1040" y="263" font-size="27" font-weight="650">Check the answers</text>
+    <rect x="998" y="315" width="356" height="74" rx="14" fill="#f1f5fa"/>
+    <circle cx="1034" cy="352" r="16" fill="none" stroke="#526582" stroke-width="2.5"/>
+    <path d="m1026 352 6 6 11-12" fill="none" stroke="#526582" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1064" y="360" font-size="24" font-weight="600">Are they right?</text>
+    <rect x="998" y="407" width="356" height="74" rx="14" fill="#f1f5fa"/>
+    <path d="M1022 438h24m-24 12h24" stroke="#526582" stroke-width="3" stroke-linecap="round"/>
+    <text x="1064" y="452" font-size="24" font-weight="600">Do they agree?</text>
+    <text x="1176" y="524" text-anchor="middle" font-size="24">Does agreement still</text>
+    <text x="1176" y="554" text-anchor="middle" font-size="24" fill="#506579">help us choose what to trust?</text>
+
+    <text x="56" y="633" font-size="32" font-weight="700" letter-spacing="-.4">Agreeing is not the same as being right.</text>
+    <text x="56" y="672" font-size="24" fill="#506579">Imagine asking “What is 2 + 2?” The right answer is 4.</text>
+
+    <!-- These two examples are not assigned to either model version. -->
+    <rect x="56" y="700" width="648" height="176" rx="20" fill="#fffcf4" stroke="#e7d7af"/>
+    <rect x="736" y="700" width="648" height="176" rx="20" fill="#fff8f5" stroke="#eccac0"/>
+    <circle cx="88" cy="737" r="5" fill="#936914"/>
+    <text x="105" y="747" font-size="27" font-weight="650" fill="#735411">Different answers, all wrong</text>
+    <circle cx="768" cy="737" r="5" fill="#ac5140"/>
+    <text x="785" y="747" font-size="27" font-weight="650" fill="#964532">Same answer, still wrong</text>
+
+    <g fill="#ffffff" stroke="#e7d7af" stroke-width="1.5">
+      <rect x="102" y="771" width="90" height="69" rx="14"/>
+      <rect x="219" y="771" width="90" height="69" rx="14"/>
+      <rect x="336" y="771" width="90" height="69" rx="14"/>
+      <rect x="453" y="771" width="90" height="69" rx="14"/>
+      <rect x="570" y="771" width="90" height="69" rx="14"/>
+    </g>
+    <g text-anchor="middle" font-size="36" font-weight="600" fill="#735411">
+      <text x="147" y="817">3</text>
+      <text x="264" y="817">5</text>
+      <text x="381" y="817">6</text>
+      <text x="498" y="817">3</text>
+      <text x="615" y="817">5</text>
+    </g>
+    <g fill="#ffffff" stroke="#eccac0" stroke-width="1.5">
+      <rect x="782" y="771" width="90" height="69" rx="14"/>
+      <rect x="899" y="771" width="90" height="69" rx="14"/>
+      <rect x="1016" y="771" width="90" height="69" rx="14"/>
+      <rect x="1133" y="771" width="90" height="69" rx="14"/>
+      <rect x="1250" y="771" width="90" height="69" rx="14"/>
+    </g>
+    <g text-anchor="middle" font-size="36" font-weight="600" fill="#964532">
+      <text x="827" y="817">3</text>
+      <text x="944" y="817">3</text>
+      <text x="1061" y="817">3</text>
+      <text x="1178" y="817">3</text>
+      <text x="1295" y="817">3</text>
+    </g>
+    <text x="720" y="908" text-anchor="middle" font-size="20" fill="#617487">Illustration only, not experimental results. Either model version can produce either pattern.</text>
+
+    <rect x="56" y="935" width="1328" height="106" rx="19" fill="url(#takeaway)"/>
+    <text x="83" y="967" font-size="18" font-weight="650" letter-spacing="1.7" fill="#9ddbd9">WHAT THIS SMALL STUDY SHOWS</text>
+    <text x="83" y="1005" font-size="27" font-weight="600" fill="#ffffff">Reliability can drop without a consistent rise in agreement on one wrong answer.</text>
+  </g>
+</svg>
