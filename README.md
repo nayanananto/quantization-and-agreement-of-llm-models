@@ -1,14 +1,13 @@
 # Quantization and Agreement in Homogeneous LLM Panels
 
-![Illustrated project overview: compare an original AI model with a less-memory copy, ask the same question repeatedly, and check the answers. Matching shapes show how repeated answers can agree yet still be wrong.](docs/project-overview-illustrated.png)
+[![UncertaiNLP poster: Does Quantization Change What Agreement Means? A Paired Audit of Homogeneous LLM Panels.](docs/uncertainlp-poster.png)](docs/uncertainlp-poster.png)
 
 If an AI gives the same answer several times, it is tempting to trust it. This
 project asks whether that agreement stays useful after making the model use
 less memory. We compare the original and compressed versions, then check
 whether their answers are right and whether their mistakes agree. In this
 small study, reliability can drop without a consistent rise in agreement on
-one wrong answer. The shapes in the figure are illustrative answer symbols,
-not experimental results.
+one wrong answer.
 
 This branch is the minimal reproducibility artifact for the paired FP16--NF4
 study. It contains no manuscript files, generated paper figures, failed runs,
